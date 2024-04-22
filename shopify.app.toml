@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "781a0f79eed029c2f3a86b60234d7887"
+name = "test-apps"
+handle = "test-apps-27"
+application_url = "https://fresh-imp-novel.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-8cc1fc21.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://fresh-imp-novel.ngrok-free.app/auth/callback",
+  "https://fresh-imp-novel.ngrok-free.app/auth/shopify/callback",
+  "https://fresh-imp-novel.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
